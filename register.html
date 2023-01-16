@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Petunia's Bike shop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styleregister.css">
+</head>
+
+<body>
+    <div class="navbar">
+      <div class="navbar_left">
+        <a href="index.html">
+          <img src="selfmadelogo.png">
+        </a>
+      </div>
+      <div class="navbar_right">
+      <p> Already have an account? 
+            <a style="color:blue;" href="signin.html">Sign in</a>
+      </p>
+      </div>
+
+      
+      
+    </div>
+    <div class = "Register">
+      <h1 style="text-align:center;">Create an account</h1>
+      <form action="index.html">
+        <div class="radio-container">
+          <div class="radio-gaga">
+            <input type="radio" id="buyer" name="user_type" value="" required>
+            <label for="buyer">buyer account</label>
+          </div>
+          <div class="radio-gaga">
+            <input type="radio" id="seller" name="user_type" value="" required>
+          <label for="seller">seller account</label>
+          </div>
+        </div>
+        <input type="text" placeholder="user id" style="text-align:left;" required>
+        <input type="email" placeholder="email" style="text-align:left;" required>
+        <input type="password" placeholder="password" style="text-align:left;" required>
+        <input type="text" placeholder="name" style="text-align:left;" required>
+        <input type="text" placeholder="address" style="text-align:left;" required>
+        <select name="country" id="country" required>
+            <option value="" selected disabled>country</option>
+            <option value="Albania">Albania</option>
+            <option value="Algeria">Algeria</option>
+            <option value="Andorra">Andorra</option>
+            <option value="Bahamas">Bahamas</option>
+            <option value="Bulgaria">Bulgaria</option>
+            <option value="Canada">Canada</option>
+            <option value="Chad">Chad</option>
+            <option value="Greece">Greece</option>
+            <option value="Ireland">Ireland</option>
+            <option value="Kuwait">Kuwait</option>
+            <option value="Monaco">Monaco</option>
+            <option value="Netherlands">Netherlands</option>
+            <option value="North Macedonia">North Macedonia</option>
+            <option value="Poland">Poland</option>
+            <option value="Romania">Romania</option>
+            <option value="Sri Lanka">Sri Lanka</option>
+          </select>
+        <input type="text" placeholder="zipcode" style="text-align:left;" required>
+        <select name="sex" id="sex" required>
+            <option value="" selected disabled>sex</option>
+            <option value="female">female</option>
+            <option value="non-binary">non-binary</option>
+            <option value="prefer not to say">prefer not to say</option>
+            <option value="male">male</option>
+          </select>
+        <select name="language" id="language" required>
+            <option value="" selected disabled>language</option>
+            <option value="English">English</option>
+            <option value="Dutch">Dutch</option>
+        </select>
+        <textarea placeholder="bio" style="text-align:left;" required></textarea>
+        <button type="submit" ><b>CREATE ACCOUNT</b></button>
+      </form>
+      
+    </div>
+
+</body>
+</html>
